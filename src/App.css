@@ -156,6 +156,7 @@ section.main .logo {
 
 .showplaces-container .slider {
   width:75vw;
+  min-width: min-content;
   height: 40vh;
   margin: 40px auto;
   overflow: hidden;
