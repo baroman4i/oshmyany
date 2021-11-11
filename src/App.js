@@ -1,8 +1,7 @@
 import './App.css';
 import React from 'react';
 import Main from './components/Main/Main';
-import Slider from './components/Slider/Slider';
-import DefLink from './components/UI/DefLink';
+import More from './components/More/More';
 function App() {
   const themes = [
     {
@@ -36,12 +35,8 @@ function App() {
                 name: 'Годы Второй мировой войны',
                 backgroundImage: 'img/4b2f3ac364f5ac08e1a3d8fc0f2f0414.jpg',
                 img: 'img/WOW/melnica_1916.jpg',
-                text: 'Ошмяны были заняты Красной Армией в сентябре 1939 г. В административном плане Ошмяны стали центром района, который был образован 15 января 1940 г. и вошел в состав Вилейской области. Началась советизация разных сфер жизни города и самих горожан. Советская администрация контролировала местную экономику, общественную, культурную жизнь. В город приезжали советские кадры, партийные работники. Часть населения подверглась репрессиям: арестам и высылке вглубь СССР. С 25 июня 1941 г. до 7 июля 1944 г. город был оккупирован нацистами. В 1945 г. он вошёл в состав БССР, и Ошмяны стали районным центром Молодечненской области. В ноябре 1960 г. Ошмянский район передан в состав Гродненской области. В 2006 г. был официально утвержден герб города, разработанный на основе варианта 1792 г.',
+                text: 'Ошмяны были заняты Красной Армией в сентябре 1939 года, а в административном плане Ошмяны стали центром района, который был образован 15 января 1940 г. и вошел в состав Вилейской области. Началась советизация разных сфер жизни города и самих горожан. Советская администрация контролировала местную экономику, общественную, культурную жизнь. В город приезжали советские кадры, партийные работники. Часть населения подверглась репрессиям: арестам и высылке вглубь СССР. С 25 июня 1941 г. до 7 июля 1944 г. город был оккупирован нацистами. В 1945 г. он вошёл в состав БССР, и Ошмяны стали районным центром Молодечненской области. В ноябре 1960 г. Ошмянский район передан в состав Гродненской области. В 2006 г. был официально утвержден герб города, разработанный на основе варианта 1792 г.',
                 content: [
-                    // {
-                    //     img: 'img/WOW/neleg1.jpg',
-                    //     text: 'text'
-                    // }, 
                     {
                         img: 'img/WOW/IMG_1333 (1).jpg',
                         text: 'Братская могила в г. Ошмяны, городской парк'
@@ -61,7 +56,7 @@ function App() {
                 name: 'Гетто в Ошмянах',
                 backgroundImage: 'img/Тонгариро.jpg',
                 img: 'img/getto/1920px-Ghetto_Oshmyany-Ugleev-2a.jpg',
-                text: 'Немцы очень серьёзно относились к возможности еврейского сопротивления, и поэтому в большинстве случаев в первую очередь убивали в гетто или ещё до его создания евреев-мужчин в возрасте примерно от 15 до 50 лет — несмотря на экономическую нецелесообразность, так как это были самые трудоспособные узники. По этим соображениям нацисты провели первую «акцию» (таким эвфемизмом гитлеровцы называли организованные ими массовые убийства) 10 июля 1941 года. Немцы приказали юденрату представить списки евреев-мужчин в возрасте от 17 до 65 лет, затем с полицаями ворвались в еврейские дома, согнали около 700 человек из этого списка на городскую площадь и вывезли в место в 1,5 километра от деревни Ягеловщина в урочище Люговщина, убили и закопали там в трёх братских могилах.',
+                text: 'Немцы очень серьёзно относились к возможности еврейского сопротивления, и поэтому в большинстве случаев в первую очередь убивали в гетто или ещё до его создания евреев-мужчин в возрасте примерно от 15 до 50 лет — несмотря на экономическую нецелесообразность, так как это были самые трудоспособные узники. По этим соображениям нацисты провели первую «акцию» (таким эвфемизмом гитлеровцы называли организованные ими массовые убийства) 10 июля 1941 года. \n Немцы приказали юденрату представить списки евреев-мужчин в возрасте от 17 до 65 лет, затем с полицаями ворвались в еврейские дома, согнали около 700 человек из этого списка на городскую площадь и вывезли в место в 1,5 километра от деревни Ягеловщина в урочище Люговщина, убили и закопали там в трёх братских могилах.',
                 content: [
                     {
                         img: 'img/getto/1920px-Ghetto_Oshmyany-Ugleev-2a.jpg',
@@ -90,19 +85,20 @@ function App() {
                 name: 'Краеведческий музей имени Богушевича',
                 backgroundImage: 'img/Aoraki-Mount_Cook_from_Hooker_Valley.jpg',
                 img: 'img/culture/1_clear_resize1.jpg',
-                text: 'Гора́ Ку́ка, или Аораки, — гора в новозеландских Южных Альпах, высочайшая точка Новой Зеландии, находится в западной части Южного острова недалеко от побережья. Эта сложенная кристаллическими породами гора с крутыми склонами, имеющая форму седла, покрыта снегом и ледниками',
+                text: 'Музей создан 1952 году, а в 1953 году музею присвоено имя белорусского поэта Франтишка Богушевича. В музее хранятся личные вещи Ф. Богушевича, предметы археологии и нумизматики, предметы быта, изделия народных мастеров, документы и фотографии конца XIX-XX вв. В 2000 г. музей получил здание в центре города. \n После реконструкции, 20 ноября 2009 г. состоялось торжественное открытие музея. На 1 января 2012 г. фонды музея насчитывали 21471 музейный предмет. Наиболее ценными предметами являются мемориальные вещи и документы Ф.Богушевича, клад монет ВКЛ и Речи Посполитой XVI - XVII вв. В 2010 г. музей получил в дар 431 картину от Президента Международной ассоциации «Искусство народов мира» Н. И. Корнилова. На основе этой коллекции создана постоянно действующая художественная галерея.',
                 content: [
                     {
                         img: 'img/culture/Достопримечательные-места-Ошмянщины.-Фото-Валерий-Картуль.jpg',
                         text: 'Экспонаты музея имени Богушевича'
                     }, 
                     {
-                        img: 'img/culture/unnamed.jpg',
-                        text: 'Музей имени Богушевича снаружи'
-                    },
-                    {
                         img: 'img/culture/Мемориальный-уголок-Франтишка-Богушевича.-Фото-Валерий-Картуль.jpg',
                         text: 'Мемориальный уголок Франтишка Богушевича'
+                    },
+                    {
+                        img: 'img/culture/L.jpg',
+                        panorama: '!4v1635354101878!6m8!1m7!1sCAoSLEFGMVFpcE9sU0hpaE1XTVRBRlYtQ25COVRZNlFkZ253NTBPYVF6YkFYS2ZX!2m2!1d54.4243318!2d25.9341944!3f140!4f0!5f0.7820865974627469',
+                        text: 'Панорама одной из комнат музея имени Богушевича'
                     }
                 ],
                 map: '!1m18!1m12!1m3!1d3662.372515721566!2d25.93313537849637!3d54.424289654130284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35c565484c5d%3A0xdc6069a9701d387a!2z0JrRgNCw0LXQstC10LTRh9C10YHQutC40Lkg0LzRg9C30LXQuSDQuNC80LXQvdC4INCR0L7Qs9GD0YjQtdCy0LjRh9Cw!5e1!3m2!1sru!2sby!4v1634736622461!5m2!1sru!2sby'
@@ -115,15 +111,15 @@ function App() {
                 content: [
                     {
                         img: 'img/culture/1553253857e0c.jpg',
-                        text: 'text'
+                        text: 'Обезглавленный памятник Ленину в годы Второй мировой войны'
                     }, 
                     {
                         img: 'img/culture/IMG_0938-1.jpg',
-                        text: 'text2'
+                        text: 'Памятник Ленину'
                     },
                     {
                         img: 'img/culture/2719430056_7c90cc3f29_o.jpg',
-                        text: 'text1'
+                        text: 'Памятник Ленину со стороны'
                     },
                 ],
                 map: '!1m18!1m12!1m3!1d1035.1403978670237!2d25.937829243729905!3d54.42529690627138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35c52b8c6ab5%3A0x254a3aea25d2239a!2sLenin%20Monument!5e1!3m2!1sru!2sby!4v1634728264683!5m2!1sru!2sby'
@@ -132,20 +128,20 @@ function App() {
                 name: 'Кресты Святой горы',
                 backgroundImage: 'img/4b2f3ac364f5ac08e1a3d8fc0f2f0414.jpg',
                 img: 'img/culture/2015_12_hod.jpg',
-                text: 'Памятник Ленину пережил многие события, проходящие на территории Ошмян. В годы Великой Отечественной войны, во времена полной оккупации территории Ошмянского района  он был частично разрушен немцами, но после восстановлен и, до недавнего времени, стоявший на главной площади, но менее десяти лет назад был перенесён на новое место, недалеко от старого.',
+                text: 'На горе Кальварии, возле храма стоят кресты. Жители Ошмян, на вербное воскресение проводят шествие. Изготавливается деревянный крест и после службы проносится по всему городу, делается 14 остановок (такое количество сделал Иисус по пути в Голгофу). В конце пути крест устанавливается на горе.',
                 content: [
                     {
                         img: 'img/culture/2015_12_hod.jpg',
-                        text: 'text'
+                        text: 'Кресты Святой горы'
                     }, 
                     {
                         img: 'img/culture/EU6YcG5UwAAS1Oj.jpg',
-                        text: 'text2'
+                        text: 'Кресты Святой горы'
                     },
                     {
                         img: 'img/culture/DJI_0040.jpg',
                         video: 'https://www.youtube.com/embed/p1_XtsrUYEc',
-                        text: 'text1'
+                        text: 'Видеоролик "Крестный поход в Ошмянах"'
                     },
                 ],
                 map: '!1m14!1m8!1m3!1d4642.195628683185!2d25.95527011131568!3d54.42590643703401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd484f0d35afae068!2z0KHQstGP0YLQsNGPINCz0L7RgNCw!5e0!3m2!1sru!2sby!4v1634812068792!5m2!1sru!2sby'
@@ -156,25 +152,25 @@ function App() {
         id: 'nr',
         name: 'Архитектурные достопримечательности',
         previewUrl: 'img/oszmiany_1935_22.jpg',
-        backgroundImage: 'img/architecture/DSC_0399.jpg',
+        backgroundImage: 'img/architecture/DSC_0399.avif',
         subtopics: [
             {
                 name: 'Свято-Воскресенская церковь',
                 backgroundImage: 'img/Тонгариро.jpg',
-                img: 'img/culture/DSC00125.jpeg',
+                img: 'img/architecture/DSC00125.jpeg',
                 text: 'Первые кирпичики в основание православного храма были заложены в 1873 году. Строительство церкви Воскресения Христова было окончено через 10 лет. Храм в Ошмянах стал заменой старой каменной церквушке, расположенной на окраине города, вместимость которой не позволяла посещать службу всем желающим.Ошмянская церковь построена в псевдорусском стиле, в виде креста по проекту архитектора А. Полозова. Храм располагается в историческом центре города, неподалеку от костела святого Михаила и бывшей синагоги.',
                 content: [
                     {
-                        img: 'img/culture/DSC00125.jpeg',
-                        text: 'text'
+                        img: 'img/architecture/DSC00125.jpeg',
+                        text: 'Свято-Воскресенская церковь'
                     }, 
                     {
-                        img: 'img/culture/DSC00127_01.jpeg',
-                        text: 'text1'
+                        img: 'img/architecture/DSC00127_01.jpeg',
+                        text: 'Свято-Воскресенская церковь изнутри'
                     },
                     {
-                        img: 'img/culture/IMG_5133.jpg',
-                        text: 'text2'
+                        img: 'img/architecture/IMG_5133.jpg',
+                        text: 'Свято-Воскресенская церковь'
                     }
                 ],
                 map: '!1m14!1m8!1m3!1d1095.4620171465667!2d25.935278565829236!3d54.424048778188144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35c541339a5d%3A0x6a8b2edeaa5b9940!2z0KbQtdGA0LrQvtCy0Ywg0JLQvtGB0LrRgNC10YHQtdC90LjRjyDQpdGA0LjRgdGC0L7QstCwLCDRg9C7LiDQodC-0LLQtdGC0YHQutCw0Y8gMTI1LCDQntGI0LzRj9C90Ys!5e0!3m2!1sru!2sby!4v1634812584326!5m2!1sru!2sby'
@@ -182,19 +178,20 @@ function App() {
             {
                 name: 'Гольшанский замок',
                 backgroundImage: 'img/geiranger_fjord2.jpg',
-                img: 'img/architecture/154159.jpg',
+                img: 'img/architecture/154159.avif',
                 text: 'Первый период расцвета Гольшан пришелся на XIV – XV века, когда город был центром удельного княжества ВКЛ. В 1525 году княжна Елена Гольшанская вышла замуж за подканцлера Великого Княжества Литовского Павла Сапегу – и местность перешла во владение к Сапегам. Именно при Сапегах, в первой половине XVII века, случился пик развития местечка. Тогда и был отстроен огромный замок, который находился поодаль от самого населенного пункта, на возвышенности, и был окружен рвами с водой. В то же время в Гольшанах возвели и костел францисканцев, который, в отличие от замка, прекрасно сохранился до наших дней.',
                 content: [
                     {
-                        img: 'img/architecture/154159.jpg',
-                        text: 'Вид сверху на Гольшанский замок.',
+                        img: 'img/architecture/154159.avif',
+                        text: 'Панорама гольшанского замка',
+                        panorama: '!4v1635350972675!6m8!1m7!1sCAoSLEFGMVFpcE1XUXE0cGRFUTk0R0FYb1ZuNDZKRUZOSjRlMWZhZXJ5bGpZT2pT!2m2!1d54.2512926091327!2d26.02045495116707!3f340!4f0!5f0.7820865974627469'
                     },
                     {
-                        img: 'img/architecture/DSC_0399.jpg',
+                        img: 'img/architecture/DSC_0399.avif',
                         text: 'Вид на уцелевшую башню Гольшанского замка.'
                     }, 
                     {
-                        img: 'img/architecture/maxresdefault (1).jpg',
+                        img: 'img/architecture/maxresdefault (1).avif',
                         video: 'https://www.youtube.com/embed/A8y7Olu89Cw',
                         text: 'Видеоролик "Гольшанский замок: руины замка Сапег в деревне Гольшаны"'
                     }
@@ -204,19 +201,19 @@ function App() {
             {
                 name: 'Костёл Святого Михаила Архангела',
                 backgroundImage: 'img/architecture/DSC_0399.jpg',
-                img: 'img/architecture/4d156a7e6c682787d62a1e011ed9738e.jpg',
-                text: 'Построенный в 1906–1910 гг. на месте храма ХIV века костел Михаила Архангела – самое высокое здание Ошмян и силуэтная доминанта города. Эта святыня – блестящая иллюстрация стиля «виленского» барокко в его, если угодно, необарочной интерпретации. Пятиярусные башни изысканного силуэта, парящие над площадью, подобны двум белым свечам, обозреваемым далеко окрест. При подъезде к Ошмянам с любой стороны они – великолепный ориентир городского центра для путешественников. Надпись на латыни над входом в храм «TE DEUM LAUDAMUS» («Тебя, Боже, хвалим»), взятая из христианского гимна IV века, придает пафосное настроение устремленному к небесам костелу. Текст Анатолия Вараввы, путеводитель «По дорогам Ошмянского края»',
+                img: 'img/architecture/4d156a7e6c682787d62a1e011ed9738e.avif',
+                text: 'Построенный в 1906–1910 годах на месте храма ХIV века костел Михаила Архангела – самое высокое здание Ошмян и силуэтная доминанта города. Эта святыня – блестящая иллюстрация стиля «виленского» барокко в его, если угодно, необарочной интерпретации. Пятиярусные башни изысканного силуэта, парящие над площадью, подобны двум белым свечам, обозреваемым далеко окрест. \n При подъезде к Ошмянам с любой стороны они – великолепный ориентир городского центра для путешественников. Надпись на латыни над входом в храм «TE DEUM LAUDAMUS» («Тебя, Боже, хвалим»), взятая из христианского гимна IV века, придает пафосное настроение устремленному к небесам костелу. Текст Анатолия Вараввы, путеводитель «По дорогам Ошмянского края»',
                 content: [
                     {
-                        img: 'img/architecture/4d156a7e6c682787d62a1e011ed9738e.jpg',
+                        img: 'img/architecture/4d156a7e6c682787d62a1e011ed9738e.avif',
                         text: 'Фото костёла Святого Михаила Архангела'
                     },
                     {
-                        img: 'img/architecture/DSC_0209.jpg',
+                        img: 'img/architecture/DSC_0209.avif',
                         text: 'Внутри костёла Святого Михаила'
                     },
                     {
-                        img: 'img/architecture/maxresdefault.jpg',
+                        img: 'img/architecture/maxresdefault.avif',
                         video: 'https://www.youtube.com/embed/XuF7JaeE2WU',
                         text: 'Видеоролик "Костёл Святого Михаила Архангела"'
                     }                   
@@ -226,21 +223,21 @@ function App() {
             {
                 name: 'Руины францисканского костёла',
                 backgroundImage: 'img/architecture/8bfb1e52a525db4838c5d32399027eb2.jpg',
-                img: 'img/architecture/8bfb1e52a525db4838c5d32399027eb2.jpg',
-                text: 'Гейрангер-фьорд — фьорд в регионе Суннмёре, расположенный в самой южной части фюльке Мёре-ог-Ромсдал в Норвегии. Находится примерно в 200 километрах к северо-востоку от Бергена и в 280 километрах к северо-западу от Осло. Фьорд простирается на 15 километров и представляет собой одно из ответвлений Стур-фьорда. Глубина составляет 565 метров. В июле 2005 года был внесён в список Всемирного наследия ЮНЕСКО.',
+                img: 'img/architecture/8bfb1e52a525db4838c5d32399027eb2.avif',
+                text: 'Костел францисканцев был реконструирован в 1822 году. При этом были использованы остатки стен предыдущей постройки, но на сей раз он был возведен целиком из кирпича. В рабочем состоянии храм просуществовал недолго, после восстания 1864 года его закрыли. \n Костел утратил свое непосредственное предназначение, и эту постройку стали использовать в качестве склада, что не могло не повлиять на сохранность памятника. В отличие от костела, здание монастыря францисканцев было разрушено совсем, и от него, к большому сожалению, вообще ничего не осталось.',
                 content: [
                     {
-                        img: 'img/architecture/unnamed.jpg',
-                        text: 'text'
+                        img: 'img/architecture/unnamed.avif',
+                        text: 'Руины францисканского костёла'
                     }, 
                     {
-                        img: 'img/architecture/ruins.jpg',
+                        img: 'img/architecture/ruins.avif',
                         video: 'https://www.youtube.com/embed/bs3NDsxGYPc',
                         text: 'Видеоролик "«Ошмянская Голгофа» – руины костела францисканцев"'
                     },
                     {
-                        img: 'img/architecture/8bfb1e52a525db4838c5d32399027eb2.jpg',
-                        text: 'text2'
+                        img: 'img/architecture/8bfb1e52a525db4838c5d32399027eb2.avif',
+                        text: 'Руины францисканского костёла'
                     }
                 ],
                 map: '!1m18!1m12!1m3!1d1127.5112817816932!2d25.955492720034226!3d54.425873066273205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35df17df43b1%3A0x15a2463faa4f0428!2z0KDRg9C40L3RiyDRhNGA0LDQvdGG0LjRgdC60LDQvdGB0LrQvtCz0L4g0LrQvtGB0YLRkdC70LA!5e0!3m2!1sru!2sby!4v1634728172118!5m2!1sru!2sby'
@@ -248,23 +245,23 @@ function App() {
             {
                 name: 'Гольшанский костел францисканцев',
                 backgroundImage: 'img/Тонгариро.jpg',
-                img: 'img/culture/0_8bc6d_3df0c876_XXL.jpg',
-                text: 'Тонгариро — самый старый национальный парк в Новой Зеландии, расположенный в центральной части Северного Острова. В парке находится озеро Ротопунаму.',
+                img: 'img/architecture/0_8bc6d_3df0c876_XXL.avif',
+                text: 'Костёл францисканцев в Гольшанах – памятник архитектуры в стиле барокко, включенный в список Государственных историко-культурных ценностей. Храм построен в 1618 году по приказу Павла Стефана Сапеги – подканцлера Великого княжества Литовского и на тот момент владельца местечка Гольшаны. \n Павел Сапега был ярым католиком и признавал только одну религию – католическую. Он выгнал с Гольшан всех протестантов и пригласил монахов-францисканцев в своё родовое имение. Сначала был основан монастырь францисканцев, а после на фундаменте бывшего кальвинистского собора был возведен костёл во имя Святого Иоанна Крестителя. ',
                 content: [
                     {
-                        img: 'img/culture/0_8bc6d_3df0c876_XXL.jpg',
-                        text: 'text'
+                        img: 'img/architecture/0_8bc6d_3df0c876_XXL.avif',
+                        text: 'Гольшанский костел францисканцев'
                     }, 
                     {
-                        img: 'img/culture/107.jpg',
-                        text: 'text1'
+                        img: 'img/architecture/107.avif',
+                        text: 'Гольшанский костел францисканцев изнутри'
                     },
                     {
-                        img: 'img/culture/ff21e70811fb09a5515366e78c9fad2c.jpg',
-                        text: 'text2'
+                        img: 'img/architecture/ff21e70811fb09a5515366e78c9fad2c.avif',
+                        text: 'Гольшанский костел францисканцев сверху'
                     }
                 ],
-                map: '!1m18!1m12!1m3!1d2249.880159573912!2d12.565958415897699!3d55.6736840805322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531280f6eaf3%3A0xd9b50b0db50b27b0!2z0J_QsNGA0Log0KLQuNCy0L7Qu9C4!5e0!3m2!1sru!2sus!4v1603712744220!5m2!1sru!2sus'
+                map: '!1m14!1m8!1m3!1d9322.741836559768!2d26.0097446!3d54.2564505!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafc2e46eabcc1306!2z0JrQvtGB0YLQtdC7INGE0YDQsNC90YbQuNGB0LrQsNC90YbQtdCyINCyINCT0L7Qu9GM0YjQsNC90LDRhQ!5e0!3m2!1sru!2sby!4v1635363531942!5m2!1sru!2sby'
             }
         ]
     },
@@ -282,15 +279,15 @@ function App() {
                 content: [
                     {
                         img: 'img/history/8dc1112f9a995df3bf9992f6a72502a9.jpg',
-                        text: 'text'
+                        text: 'Синагога в Ошмянах'
                     }, 
                     {
                         img: 'img/history/старое-фото-ошмяны.jpg.webp',
-                        text: 'text1'
+                        text: 'Старый снимок синагони'
                     },
                     {
                         img: 'img/history/oshmyany-sinagoga-sinagoga-1416-1518702151_b1.jpg',
-                        text: 'text2'
+                        text: 'Снимок синагони перед войной'
                     }
                 ],
                 map: '!1m18!1m12!1m3!1d1203.2482074393515!2d25.934174201669173!3d54.42467696604547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35c575c774af%3A0xabac80aede42beb!2sFormer%20synagogue!5e0!3m2!1sru!2sby!4v1634984297852!5m2!1sru!2sby'
@@ -307,7 +304,7 @@ function App() {
                     }, 
                     {
                         img: 'img/history/budenovka-oshmiani.jpg',
-                        text: 'Усадьба Льва Стругача'
+                        text: 'Усадьба Льва Стругача сверху'
                     },
                     {
                         img: 'img/history/428a380518b6977cb1871bfc14c2570b.jpg',
@@ -324,19 +321,19 @@ function App() {
                 content: [
                     {
                         img: 'img/history/hrazmura02-01.jpg',
-                        text: 'Усадьба Льва Стругача'
+                        text: 'Ошмянская типография'
                     },
                     {
                         img: 'img/history/maxresdefault.jpg',
                         video: 'https://www.youtube.com/embed/ckfEVtKBmzM',
-                        text: 'Усадьба Льва Стругача'
+                        text: 'Видеоролик "Неизведанная Ошмянщина"'
                     }, 
                     {
                         img: 'img/history/2625348_original.jpg',
-                        text: 'Усадьба Льва Стругача'
+                        text: 'Ошмянская типография'
                     },
                 ],
-                map: '!1m18!1m12!1m3!1d4814.569021958265!2d25.781792389411876!3d54.45850686581977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ddcae7cc9b20c1%3A0x1f231be47f465260!2z0KbQtdGA0LrQvtCy0Ywg0J_RgNC10YHQstGP0YLQvtC5INCU0LXQstGLINCc0LDRgNC40Lg!5e1!3m2!1sru!2sby!4v1634738530367!5m2!1sru!2sby'
+                map: '!1m18!1m12!1m3!1d8274.240981441804!2d25.77901763890263!3d54.45934820660419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ddcae857da39a3%3A0x4000ba0e9c8b0d64!2z0JzRg9GA0L7QstCw0L3QsNGPINCe0YjQvNGP0L3QutCw!5e1!3m2!1sru!2sby!4v1635365233853!5m2!1sru!2sby'
             }
         ]
     },
@@ -354,18 +351,18 @@ function App() {
                 content: [
                     {
                         img: 'img/persons/bec5445719f6.jpg',
-                        text: 'text'
+                        text: 'Портрет Криштофа Дорогостайского'
                     }, 
                     {
                         img: 'img/persons/IMG_5640.jpg',
-                        text: 'text1'
+                        text: 'Портрет Криштофа Дорогостайского'
                     },
                     {
-                        img: 'img/Park_tivoli.jpg',
-                        text: 'text2'
+                        img: 'img/persons/Kryštap_Darahastajski_-_Крыштап_Дарагастайскі._Hippica_1.jpg',
+                        text: 'Иллюстрации Т. Маковского к книге «Гиппика, или Книга о лошадях»'
                     }
                 ],
-                map: '!1m18!1m12!1m3!1d2249.880159573912!2d12.565958415897699!3d55.6736840805322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531280f6eaf3%3A0xd9b50b0db50b27b0!2z0J_QsNGA0Log0KLQuNCy0L7Qu9C4!5e0!3m2!1sru!2sus!4v1603712744220!5m2!1sru!2sus'
+                map: '!1m18!1m12!1m3!1d8274.240981441804!2d25.77901763890263!3d54.45934820660419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ddcae857da39a3%3A0x4000ba0e9c8b0d64!2z0JzRg9GA0L7QstCw0L3QsNGPINCe0YjQvNGP0L3QutCw!5e1!3m2!1sru!2sby!4v1635365233853!5m2!1sru!2sby'
             },
             {
                 name: 'Франтишек Богушевич',
@@ -375,15 +372,15 @@ function App() {
                 content: [
                         {
                             img: 'img/persons/02c2eec168ffabb9d36e9abb252c656d.jpg',
-                            text: 'text'
+                            text: 'Портрет Франтишка Богушевича'
                         }, 
                         {
                             img: 'img/persons/unnamed.jpg',
-                            text: 'text1'
+                            text: 'Памятник Франтишку Богушевичу'
                         },
                         {
                             img: 'img/persons/7c5b4ba41a91f78d7f766bf3b77398f7.jpg',
-                            text: 'text2'
+                            text: 'Фото семьи Франтишка Богушевича'
                         }
                     ],
                 map: '!1m18!1m12!1m3!1d8278.084456307564!2d26.1777555!3d54.440333499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc47c9cc919ce1%3A0x4cb3c877af2989df!2z0JzRg9C30LXQuS3Rg9GB0LDQtNGM0LHQsCDQpNGA0LDQvdGC0LjRiNC60LAg0JHQvtCz0YPRiNC10LLQuNGH0LAgItCa0YPRiNC70Y_QvdGLIg!5e1!3m2!1sru!2sby!4v1634743541480!5m2!1sru!2sby'
@@ -396,18 +393,18 @@ function App() {
                 content: [
                         {
                             img: 'img/persons/Lopuh-05.jpg',
-                            text: 'text'
+                            text: 'Фото Юрия Лопуха'
                         }, 
                         {
                             img: 'img/persons/Lopuh-01.jpg',
-                            text: 'text1'
+                            text: 'Фото Юрия Лопуха'
                         },
                         {
                             img: 'img/persons/Lopuh-12.jpg',
-                            text: 'text2'
+                            text: 'Фото Юрия Лопуха'
                         }
                     ],
-                map: '!1m18!1m12!1m3!1d2249.880159573912!2d12.565958415897699!3d55.6736840805322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531280f6eaf3%3A0xd9b50b0db50b27b0!2z0J_QsNGA0Log0KLQuNCy0L7Qu9C4!5e0!3m2!1sru!2sus!4v1603712744220!5m2!1sru!2sus'
+                map: '!1m18!1m12!1m3!1d18569.862642483593!2d25.918835516098703!3d54.4235226018474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35c8ad9bd1f5%3A0xcde425a701e79886!2z0J7RiNC80Y_QvdGLLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sus!4v1635365374752!5m2!1sru!2sus'
             }
         ]
     }
@@ -415,39 +412,18 @@ function App() {
   const [activeTheme, setActiveTheme] = React.useState((Math.floor(themes.length/2)))
   const [activePlace, setActivePlace] = React.useState(Math.floor(themes[activeTheme].subtopics.length/2))
   const [activePlaceContent, setActivePlaceContent] = React.useState(Math.floor(themes[activeTheme].subtopics[activePlace].content.length/2))
-//   const width = React.useRef(null)
   const [isLoading, setIsLoad] = React.useState(true)
   React.useEffect(() => {
-    setActivePlace(Math.floor(themes[activeTheme].subtopics.length/2))
+    setActivePlace(() => Math.floor(themes[activeTheme].subtopics.length/2))
   }, [activeTheme])
   React.useEffect(() => {
-    setActivePlaceContent(Math.floor(themes[activeTheme].subtopics[activePlace].content.length/2))
+    setActivePlaceContent(() => Math.floor(themes[activeTheme].subtopics[activePlace].content.length/2))
   }, [activeTheme, activePlace])
   return (
-    <div className="App" onLoad={() => {  window.addEventListener('load', () => setIsLoad(false))}}>
+    <div className="App" onLoad={() => {  window.addEventListener('load', () => setIsLoad(() => false))}}>
       {isLoading ? <img id="loader" src={"img/480px-Loader.gif"} alt={isLoading.toString()}/>: null}
       <Main themes={themes} activeTheme={activeTheme} setActiveTheme={setActiveTheme} activePlace={activePlace} setActivePlace={setActivePlace} setActivePlaceContent={setActivePlaceContent}/>
-      <section className="more" id="more" style={{backgroundImage: `url(${themes[activeTheme].subtopics[activePlace].img})`}}>
-        <div className="text-content">
-              <h2>{themes[activeTheme].subtopics[activePlace].name}</h2>
-              <p>{themes[activeTheme].subtopics[activePlace].text}</p>
-              <div className="links">
-                <DefLink href="#more">Просмотреть на карте</DefLink>
-                <DefLink href="#main">Вернуться к темам</DefLink>
-              </div>
-              <div className="map">
-                <iframe title="map" src={'https://www.google.com/maps/embed?pb='+themes[activeTheme].subtopics[activePlace].map} allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <div className="media-content">
-            <h3>Архивные материалы</h3>
-            <div className="media-input">
-                {themes[activeTheme].subtopics[activePlace].content[activePlaceContent].video ? <iframe width="956" height="538" src={`${themes[activeTheme].subtopics[activePlace].content[activePlaceContent].video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : <img src={themes[activeTheme].subtopics[activePlace].content[activePlaceContent].img} alt={themes[activeTheme].subtopics[activePlace].content[activePlaceContent].text}></img>}
-            </div>
-            <span className="media-input-text">{themes[activeTheme].subtopics[activePlace].content[activePlaceContent].text}</span>
-            <Slider activeEl={activePlaceContent} setActiveEl={setActivePlaceContent} array={themes[activeTheme].subtopics[activePlace].content}/>
-        </div>
-      </section>
+      <More themes={themes} activeTheme={activeTheme} setActiveTheme={setActiveTheme} activePlace={activePlace} setActivePlace={setActivePlace} activePlaceContent={activePlaceContent} setActivePlaceContent={setActivePlaceContent}/>
       <div className="copyright"></div>
     </div>
   )

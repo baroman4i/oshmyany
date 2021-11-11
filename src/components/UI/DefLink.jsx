@@ -1,8 +1,8 @@
 import React from 'react'
 
-function DefLink({children, href}) {
+function DefLink({children, href, target}) {
   return (
-    <a href={href}>{children}</a>
+    <a href={href} target={target}>{children}</a>
   )
 }
 
