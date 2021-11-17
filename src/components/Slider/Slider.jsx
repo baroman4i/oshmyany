@@ -11,11 +11,13 @@ function Slider({array, activeEl, setActiveEl, setActivePlace}) {
               setActiveEl(() => i)
             }} 
             key={i} 
-            className={i === activeEl ? 'slide-card active' : 'slide-card'
-            }>
+            className={i === activeEl ? 'slide-card active' : 'slide-card'}
+            >
           {place.img ? <img src={place.img} alt={place.name || 'alt'}/> : null}
           <h3>{place.name || null}</h3>
-          <h4>{place.text !== undefined ? place.text.substr(0, (place.text.indexOf('.')))+"..." : null}</h4>
+          <h4>
+            {place.text !== undefined ? place.text.substr(0, (place.text.indexOf('.')))+"..." : null}
+          </h4>
         </div>)}
         </div>
       </div>

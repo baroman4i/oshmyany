@@ -1,38 +1,45 @@
 import React from 'react'
 import Slider from '../Slider/Slider'
 import DefLink from '../UI/DefLink'
-function More({themes, activeTheme, activePlace, setActivePlace, activePlaceContent, setActivePlaceContent}) {
-    const contentInput = React.useMemo(() => {
-    if (themes[activeTheme].subtopics[activePlace].content[activePlaceContent].video) {
-        return <iframe src={`${themes[activeTheme].subtopics[activePlace].content[activePlaceContent].video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    }
-    else if (themes[activeTheme].subtopics[activePlace].content[activePlaceContent].panorama) {
-        return <iframe src={`https://www.google.com/maps/embed?pb=${themes[activeTheme].subtopics[activePlace].content[activePlaceContent].panorama}`} title="panorams" allowfullscreen="" loading="lazy"></iframe>
-    }
-    else {
-        return <img src={themes[activeTheme].subtopics[activePlace].content[activePlaceContent].img} alt={themes[activeTheme].subtopics[activePlace].content[activePlaceContent].text}></img>
-    }
-  }, [activeTheme, activePlace, activePlaceContent])
+import ContentInput from '../ContentInput/ContentInput'
+function More({themes, activeTheme, activePlace, activePlaceContent, setActivePlaceContent}) {
   return (
       <section className="more" id="more" style={{backgroundImage: `url(${themes[activeTheme].subtopics[activePlace].img})`}}>
         <div className="text-content">
               <h2>{themes[activeTheme].subtopics[activePlace].name}</h2>
               <p>{themes[activeTheme].subtopics[activePlace].text}</p>
               <div className="links">
-                <DefLink href={`https://www.google.com/maps/search/${themes[activeTheme].subtopics[activePlace].name},+Ошямнский+район`.replace(/ /gi, '+')} target="_blank">Просмотреть на карте</DefLink>
+                <DefLink 
+                    href={`https://www.google.com/maps/search/${themes[activeTheme].subtopics[activePlace].name},+Ошямнский+район`.replace(/ /gi, '+')} 
+                    target="_blank">
+                    Просмотреть на карте
+                </DefLink>
                 <DefLink href="#main">Вернуться к темам</DefLink>
               </div>
               <div className="map">
-                <iframe title="map" src={'https://www.google.com/maps/embed?pb='+themes[activeTheme].subtopics[activePlace].map} allowfullscreen="" loading="lazy"></iframe>
+                <iframe 
+                    title="map" 
+                    src={'https://www.google.com/maps/embed?pb='+themes[activeTheme].subtopics[activePlace].map} allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
             </div>
         </div>
         <div className="media-content">
             <h3>Архивные материалы</h3>
             <div className="media-input">
-                {contentInput}
+                <ContentInput 
+                    themes={themes} 
+                    activeTheme={activeTheme} 
+                    activePlace={activePlace} 
+                    activePlaceContent={activePlaceContent}
+                />
             </div>
             <span className="media-input-text">{themes[activeTheme].subtopics[activePlace].content[activePlaceContent].text}</span>
-            <Slider activeEl={activePlaceContent} setActiveEl={setActivePlaceContent} array={themes[activeTheme].subtopics[activePlace].content}/>
+            <Slider 
+                activeEl={activePlaceContent} 
+                setActiveEl={setActivePlaceContent} 
+                array={themes[activeTheme].subtopics[activePlace].content}
+            />
         </div>
       </section>
   )
